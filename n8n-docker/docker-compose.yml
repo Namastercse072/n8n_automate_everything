@@ -1,0 +1,17 @@
+# version: '3.8'
+
+services:
+  n8n:
+    image: n8nio/n8n
+    restart: always
+    ports:
+      - "5678:5678"
+    environment:
+      - TZ=Asia/Ho_Chi_Minh       # set your timezone
+      - GENERIC_TIMEZONE=Asia/Ho_Chi_Minh
+      - N8N_BASIC_AUTH_ACTIVE=false
+      # - N8N_BASIC_AUTH_USER=admin
+      # - N8N_BASIC_AUTH_PASSWORD=changeme
+    volumes:
+      - ~/.n8n:/home/node/.n8n
+      # - n8n_data:/home/node/.n8n

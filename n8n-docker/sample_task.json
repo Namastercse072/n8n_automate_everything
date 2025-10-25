@@ -1,0 +1,7 @@
+[
+  { "task": "Email client" },
+  { "task": "Deploy app" },
+  { "task": "Review PR" },
+  { "task": "Fix bug" },
+  { "task": "Update docs" }
+]
